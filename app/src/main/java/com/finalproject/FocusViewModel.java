@@ -2,7 +2,6 @@ package com.finalproject;
 
 import android.app.Application;
 import android.os.CountDownTimer;
-import android.util.Log;
 
 import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;

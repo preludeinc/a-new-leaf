@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">FinalProject</string>
+    <string name="_5_00">5:00</string>
+    <string name="time_end">0:00</string>
+    <string name="time_start">5:00</string>
+    <string name="reset_plant_count">0</string>
+    <string name="song_name">song name</string>
+    <string name="music_icon">music icon</string>
+    <string name="rules_icon">rules icon</string>
+    <string name="stats_icon">stats icon</string>
+    <string name="a_pink_flower">a pink flower</string>
+    <string name="current_song_option">current song option</string>
+    <string name="home_icon">home icon, shaped like a leaf</string>
+    <string name="play_icon_start_music">play icon, start music</string>
+    <string name="dirt_for_plant_growth">dirt for plant-growth</string>
+    <string name="start_focus_session">start focus session</string>
+    <string name="growing_plant">growing plant</string>
+    <string name="focus_timer_plant_growth">focus timer, shows plant-growth</string>
+    <string name="plant_text">A new leaf, time to plant!</string>
+    <string name="a_new_leaf_rules">A New Leaf - Rules</string>
+    <string name="focus_totals">Today\'s Focus Totals</string>
+    <string name="song_playing">Song Playing </string>
+    <string name="quote_placeholder">Quotes</string>
+    <string name="music_channel_name">Music Channel</string>
+    <string name="music_channel_id">active channel</string>
+    <string name="music_starting">Playing</string>
+    <string name="music_stopping">Stopping</string>
+
+    <string name="rules_text">
+        <![CDATA[
+        Click the green leaf to start a focus session. Your plant will grow,
+        if you don\'t close the app.
+
+        \n\nPick a song using the Music tab.
+        \nView a quote using the Quotes tab.
+        \nView daily focus totals using the Stats tab.
+        ]]>
+    </string>
+    <string name="focus_time">Focus Time</string>
+    <string name="_0">0</string>
+    <string name="plants">Plants</string>
+    <string name="genre">Genre</string>
+    <string name="a_beanstalk">a beanstalk</string>
+    <string name="quote_icon">quote icon</string>
+    <string name="pause_music_playback">pause icon, pause music</string>
+    <string name="play_icon_tooltip">Play music</string>
+    <string name="pause_icon_tooltip">Pause music playback</string>
+
+    <array name="button_tooltip">
+        <item>View Rules</item>
+        <item>Pick a Song</item>
+        <item>Focus Menu</item>
+        <item>Quote of the Day</item>
+        <item>View Focus Stats</item>
+        <item>Start Focus Session</item>
+        <item>Stop Music</item>
+    </array>
+
+    <array name="flower_img">
+        <item>pink_flower_one</item>
+        <item>pink_flower_two</item>
+        <item>pink_flower_three</item>
+        <item>pink_flower_four</item>
+    </array>
+
+    <array name="beanstalk_img">
+        <item>bean_stalk_one</item>
+        <item>bean_stalk_two</item>
+        <item>bean_stalk_three</item>
+    </array>
+
+
+</resources>

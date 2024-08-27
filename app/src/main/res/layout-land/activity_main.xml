@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_blue"
+    tools:context=".MainActivity">
+
+    <!-- Fragment Container -->
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+<!--    &lt;!&ndash; Rules Button &ndash;&gt;-->
+<!--    <ImageButton-->
+<!--        android:id="@+id/image_button_rules_button"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginBottom="10dp"-->
+<!--        android:clickable="true"-->
+<!--        android:contentDescription="@string/rules_icon"-->
+<!--        android:focusable="true"-->
+<!--        android:rotation="10"-->
+<!--        android:soundEffectsEnabled="false"-->
+<!--        android:src="@drawable/rules_icon"-->
+<!--        android:background="@android:color/transparent"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="@id/icon_guideline" />-->
+
+    <!-- Music Button -->
+    <ImageButton
+        android:id="@+id/image_button_music_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:clickable="true"
+        android:contentDescription="@string/music_icon"
+        android:focusable="true"
+        android:rotation="15"
+        android:soundEffectsEnabled="false"
+        android:src="@drawable/music_icon"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/icon_guideline"
+        app:layout_constraintTop_toBottomOf="@id/image_button_home_button" />
+
+    <!-- Home Button -->
+    <ImageButton
+        android:id="@+id/image_button_home_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:clickable="true"
+        android:contentDescription="@string/home_icon"
+        android:focusable="true"
+        android:rotation="15"
+        android:soundEffectsEnabled="false"
+        android:src="@drawable/home_leaf_icon"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toTopOf="@id/image_button_music_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/icon_guideline"
+        app:layout_constraintTop_toBottomOf="@id/image_button_quote_button" />
+
+    <!-- Quote Button -->
+    <ImageButton
+        android:id="@+id/image_button_quote_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:clickable="true"
+        android:contentDescription="@string/quote_icon"
+        android:focusable="true"
+        android:soundEffectsEnabled="false"
+        android:src="@drawable/quote_icon"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toTopOf="@id/image_button_home_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/icon_guideline"
+        app:layout_constraintTop_toBottomOf="@id/image_button_stats_button" />
+
+    <!-- Stats Button -->
+    <ImageButton
+        android:id="@+id/image_button_stats_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:clickable="true"
+        android:contentDescription="@string/stats_icon"
+        android:focusable="true"
+        android:soundEffectsEnabled="false"
+        android:src="@drawable/stats_icon"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/icon_guideline"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Focus Timer -->
+    <TextView
+        android:id="@+id/text_view_stop_watch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_marginBottom="100dp"
+        android:fontFamily="@font/part_of_me"
+        android:soundEffectsEnabled="false"
+        android:text="@string/_5_00"
+        android:textColor="@color/white"
+        android:textSize="80sp"
+        app:layout_constraintBottom_toTopOf="@id/image_button_plant_button"
+        app:layout_constraintEnd_toStartOf="@id/icon_guideline"
+        app:layout_constraintStart_toStartOf="@id/main_vert_guideline"
+        app:layout_constraintTop_toBottomOf="@id/main_horizontal_guideline" />
+
+    <!-- Plant Button -->
+    <ImageButton
+        android:id="@+id/image_button_plant_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_weight="1"
+        android:backgroundTint="@color/leaf_green"
+        android:clickable="true"
+        android:contentDescription="@string/start_focus_session"
+        android:focusable="true"
+        android:soundEffectsEnabled="false"
+        android:src="@drawable/leaf_icon"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/icon_guideline"
+        app:layout_constraintStart_toEndOf="@id/main_vert_guideline"
+        app:layout_constraintTop_toBottomOf="@id/text_view_stop_watch" />
+
+    <!-- Guidelines -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/main_horizontal_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.55" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/icon_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.87" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/main_vert_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.68" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

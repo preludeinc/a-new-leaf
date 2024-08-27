@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_blue"
+    tools:context=".HomeFragment">
+
+    <!-- Plant Text -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/plant_text"
+        android:fontFamily="@font/part_of_me"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@id/main_horizontal_guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Plant Display -->
+    <ImageView
+        android:id="@+id/plant_display"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="45dp"
+        android:contentDescription="@string/focus_timer_plant_growth"
+        android:src="@drawable/circle"
+        app:layout_constraintBottom_toBottomOf="@id/plant_display_guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Dirt -->
+    <ImageView
+        android:id="@+id/plant_dirt"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/dirt_for_plant_growth"
+        android:src="@drawable/semi_circle"
+        app:layout_constraintBottom_toBottomOf="@id/plant_display"
+        app:layout_constraintEnd_toEndOf="@id/main_vert_guideline_two"
+        app:layout_constraintStart_toStartOf="@id/main_vert_guideline_one"
+        app:layout_constraintTop_toTopOf="@id/main_horizontal_guideline" />
+
+    <!-- Plant -->
+    <ImageView
+        android:id="@+id/image_view_plant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/growing_plant"
+        android:src="@drawable/pink_flower_one"
+        android:layout_marginTop="40dp"
+        app:layout_constraintBottom_toTopOf="@id/main_growth_guideline"
+        app:layout_constraintEnd_toEndOf="@id/plant_display"
+        app:layout_constraintStart_toStartOf="@id/plant_display" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/main_vert_guideline_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.14" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/main_vert_guideline_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.86" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/main_horizontal_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.20" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/main_growth_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.48" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/plant_display_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.95" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.carousel.MaskableFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/carousel_item_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="4dp"
+    android:layout_marginEnd="4dp"
+    android:foreground="?attr/selectableItemBackground"
+    app:shapeAppearance="?attr/shapeAppearanceCornerExtraLarge">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Album Image -->
+        <ImageView
+            android:id="@+id/image_view_album_image"
+            android:layout_width="match_parent"
+            android:layout_height="515dp"
+            android:layout_margin="40dp"
+            android:contentDescription="@string/current_song_option"
+            android:scaleType="centerCrop"
+            android:src="@drawable/cloud_dancer"
+            android:transitionName="image"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Song Name -->
+        <TextView
+            android:id="@+id/text_view_song_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:fontFamily="@font/sugary_pancake"
+            android:text="@string/song_name"
+            android:textColor="@color/background_blue"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/text_view_genre"
+            app:layout_constraintEnd_toEndOf="@id/image_view_album_image"
+            app:layout_constraintStart_toStartOf="@id/image_view_album_image"
+            app:layout_constraintTop_toTopOf="@id/image_view_album_image" />
+
+        <!-- Genre -->
+        <TextView
+            android:id="@+id/text_view_genre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sugary_pancake"
+            android:text="@string/genre"
+            android:textColor="@color/background_blue"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toTopOf="@id/image_button_play_button"
+            app:layout_constraintEnd_toEndOf="@id/image_view_album_image"
+            app:layout_constraintStart_toStartOf="@id/image_view_album_image"
+            app:layout_constraintTop_toBottomOf="@id/text_view_song_name" />
+
+        <!-- Play Button -->
+        <ImageButton
+            android:id="@+id/image_button_play_button"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginEnd="25dp"
+            android:clickable="true"
+            android:contentDescription="@string/play_icon_start_music"
+            android:focusable="true"
+            android:soundEffectsEnabled="false"
+            android:src="@drawable/play_icon"
+            android:background="@android:color/transparent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.carousel.MaskableFrameLayout>

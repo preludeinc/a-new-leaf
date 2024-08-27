@@ -1,0 +1,12 @@
+[
+  {"songName": "Farm", "genre": "Contemporary", "image": "farm", "song": "farm" },
+  {"songName": "Late Night Radio", "genre": "Contemporary", "image": "late_night_radio", "song": "late_night_radio" },
+  {"songName": "Morning", "genre": "Contemporary", "image": "morning", "song": "morning" },
+  {"songName": "Cloud Dancer", "genre": "Electronica", "image": "cloud_dancer", "song":  "cloud_dancer"},
+  {"songName": "Limit 70", "genre": "Electronica", "image": "limit_70", "song": "limit_70" },
+  {"songName": "Newer Wave", "genre": "Electronica", "image": "newer_wave", "song": "newer_wave" },
+  {"songName": "Past Sadness", "genre": "Jazz", "image": "past_sadness", "song": "past_sadness" },
+  {"songName": "Moonlight Beach", "genre": "World", "image": "moonlight_beach", "song": "moonlight_beach" },
+  {"songName": "Paradise Found", "genre": "World", "image": "paradise_found", "song": "paradise_found" },
+  {"songName": "Tiki Bar Mixer", "genre": "World", "image": "tiki_bar_mixer", "song": "tiki_bar_mixer" }
+]

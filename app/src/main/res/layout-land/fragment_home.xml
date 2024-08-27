@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_blue"
+    tools:context=".HomeFragment">
+
+    <!-- Plant Text -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/part_of_me"
+        android:text="@string/plant_text"
+        android:textColor="@color/white"
+        android:layout_marginBottom="170dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:rotation="270"
+        app:layout_constraintEnd_toEndOf="@id/plant_text_guideline"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Plant Display -->
+    <ImageView
+        android:id="@+id/plant_display"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/focus_timer_plant_growth"
+        android:src="@drawable/circle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Dirt -->
+    <ImageView
+        android:id="@+id/plant_dirt"
+        android:layout_width="280dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/dirt_for_plant_growth"
+        android:src="@drawable/semi_circle_land"
+        app:layout_constraintBottom_toBottomOf="@id/plant_display"
+        app:layout_constraintEnd_toEndOf="@id/main_vert_guideline_two"
+        app:layout_constraintStart_toStartOf="@id/main_vert_guideline_one"
+        app:layout_constraintTop_toTopOf="@id/main_horizontal_guideline" />
+
+    <!-- Plant -->
+    <ImageView
+        android:id="@+id/image_view_plant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/growing_plant"
+        android:src="@drawable/pink_flower_one"
+        app:layout_constraintBottom_toTopOf="@id/plant_dirt"
+        app:layout_constraintEnd_toEndOf="@id/plant_display"
+        app:layout_constraintStart_toStartOf="@id/plant_display"
+        app:layout_constraintTop_toTopOf="@id/main_horizontal_guideline"/>
+
+    <!-- Guidelines -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/main_vert_guideline_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.32" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/main_vert_guideline_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.68" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/plant_text_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.20" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/main_horizontal_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.40" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/growth_limit_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.10" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/plant_display_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.90" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -19,6 +19,7 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <!-- Rules Button -->
+    <!-- This was revised to be a pop-up instead (displaying on app load), based on project feedback from classmates -->
    <ImageButton
             android:id="@+id/image_button_rules_button"
             android:layout_width="wrap_content"

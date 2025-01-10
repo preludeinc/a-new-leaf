@@ -18,23 +18,23 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-<!--    &lt;!&ndash; Rules Button &ndash;&gt;-->
-<!--    <ImageButton-->
-<!--        android:id="@+id/image_button_rules_button"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_margin="10dp"-->
-<!--        android:clickable="true"-->
-<!--        android:contentDescription="@string/rules_icon"-->
-<!--        android:focusable="true"-->
-<!--        android:rotation="10"-->
-<!--        android:soundEffectsEnabled="false"-->
-<!--        android:src="@drawable/rules_icon"-->
-<!--        android:background="@android:color/transparent"-->
-<!--        app:layout_constraintTop_toBottomOf="@id/button_horizontal_guideline"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toStartOf="@id/image_button_music_button"-->
-<!--        app:layout_constraintStart_toStartOf="parent" />-->
+    <!-- Rules Button -->
+   <ImageButton
+            android:id="@+id/image_button_rules_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            android:contentDescription="@string/rules_icon"
+            android:focusable="true"
+            android:rotation="10"
+            android:soundEffectsEnabled="false"
+            android:src="@drawable/rules_icon"
+            android:background="@android:color/transparent"
+            app:layout_constraintTop_toBottomOf="@id/button_horizontal_guideline"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/image_button_music_button"
+            app:layout_constraintStart_toStartOf="parent" />
 
     <!-- Music Button -->
     <ImageButton
